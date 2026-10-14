@@ -37,6 +37,10 @@ jobs:
         run: pip install -r Bela_Blok_Video_Bot/requirements.txt
       - name: Generate 5 videos
         run: python Bela_Blok_Video_Bot/generate.py --count 5
+      - name: Test Buffer connection
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python Bela_Blok_Video_Bot/publish_buffer.py --test-connection
       - name: Check publish configuration
         id: activation
         env:
