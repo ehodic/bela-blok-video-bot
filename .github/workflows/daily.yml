@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: FFmpeg
-        run: ffmpeg -version | head -n 1
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Dependencies
         run: pip install -r Bela_Blok_Video_Bot/requirements.txt
       - name: Generate 5 videos
