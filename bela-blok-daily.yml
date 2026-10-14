@@ -1,0 +1,93 @@
+name: Bela Blok - 5 videa dnevno
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+      timezone: 'Europe/Zagreb'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'preview = samo videi; publish = generiraj i zakazi objave'
+        type: choice
+        options: [preview, publish]
+        default: preview
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bela-blok-daily
+  cancel-in-progress: false
+
+jobs:
+  make-videos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: FFmpeg
+        run: ffmpeg -version | head -n 1
+      - name: Dependencies
+        run: pip install -r Bela_Blok_Video_Bot/requirements.txt
+      - name: Generate 5 videos
+        run: python Bela_Blok_Video_Bot/generate.py --count 5
+      - name: Check publish configuration
+        id: activation
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          VIDEO_PUBLIC_BASE: ${{ vars.VIDEO_PUBLIC_BASE }}
+        run: |
+          if [[ -n "$BUFFER_API_KEY" && -n "$CLOUDFLARE_API_TOKEN" && -n "$CLOUDFLARE_ACCOUNT_ID" && -n "$CLOUDFLARE_PROJECT_NAME" && -n "$VIDEO_PUBLIC_BASE" ]]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo 'Objavljivanje nije aktivno: nedostaje jedan od Buffer / Cloudflare podataka.'
+          fi
+      - name: Upload preview videos (manual preview mode)
+        if: (github.event_name == 'workflow_dispatch' && inputs.mode == 'preview') || steps.activation.outputs.ready != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: bela-blok-5-videa
+          path: Bela_Blok_Video_Bot/public/videos/
+          retention-days: 7
+      - name: Commit fresh videos (publish mode)
+        if: (github.event_name == 'schedule' || inputs.mode == 'publish') && steps.activation.outputs.ready == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Bela_Blok_Video_Bot/public/videos/ Bela_Blok_Video_Bot/manifest.json
+          git diff --cached --quiet || git commit -m 'Bela Blok daily videos'
+          git push
+      - name: Deploy media to Cloudflare Pages
+        if: (github.event_name == 'schedule' || inputs.mode == 'publish') && steps.activation.outputs.ready == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy Bela_Blok_Video_Bot/public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Confirm hosting and schedule Buffer posts
+        if: (github.event_name == 'schedule' || inputs.mode == 'publish') && steps.activation.outputs.ready == 'true'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          VIDEO_PUBLIC_BASE: ${{ vars.VIDEO_PUBLIC_BASE }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ vars.BUFFER_INSTAGRAM_CHANNEL_ID }}
+          BUFFER_TIKTOK_CHANNEL_ID: ${{ vars.BUFFER_TIKTOK_CHANNEL_ID }}
+        run: python Bela_Blok_Video_Bot/publish_buffer.py
+      - name: Save scheduled post IDs to prevent duplicates
+        if: (github.event_name == 'schedule' || inputs.mode == 'publish') && steps.activation.outputs.ready == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Bela_Blok_Video_Bot/state.json || true
+          git diff --cached --quiet || git commit -m 'Record scheduled Buffer posts'
+          git push
