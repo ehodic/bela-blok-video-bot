@@ -176,6 +176,95 @@ def duration(path):
     result = subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',str(path)],text=True)
     return float(result)
 
+# Croatian spoken forms for natural Azure TTS. Written captions keep numerals.
+_DIGIT_ONES = ('', 'jedan', 'dva', 'tri', 'četiri', 'pet', 'šest', 'sedam', 'osam', 'devet')
+_DIGIT_TEENS = ('deset', 'jedanaest', 'dvanaest', 'trinaest', 'četrnaest', 'petnaest',
+                'šesnaest', 'sedamnaest', 'osamnaest', 'devetnaest')
+_DIGIT_TENS = ('', '', 'dvadeset', 'trideset', 'četrdeset', 'pedeset',
+               'šezdeset', 'sedamdeset', 'osamdeset', 'devedeset')
+_DIGIT_HUNDREDS = ('', 'sto', 'dvjesto', 'tristo', 'četiristo',
+                   'petsto', 'šesto', 'sedamsto', 'osamsto', 'devetsto')
+
+
+def _below_thousand(n, feminine=False):
+    if n == 0:
+        return 'nula'
+    words=[]
+    h, rest = divmod(n, 100)
+    if h:
+        words.append(_DIGIT_HUNDREDS[h])
+    if 10 <= rest < 20:
+        words.append(_DIGIT_TEENS[rest-10])
+    else:
+        tens, unit = divmod(rest, 10)
+        if tens:
+            words.append(_DIGIT_TENS[tens])
+        if unit:
+            words.append('jedna' if feminine and unit == 1 else
+                         'dvije' if feminine and unit == 2 else _DIGIT_ONES[unit])
+    return ' '.join(words)
+
+
+def _last_for_plural(n):
+    # Croatian agreement for milijun/milijuna and tisuća/tisuće.
+    if 11 <= n % 100 <= 14:
+        return 5
+    return n % 10
+
+
+def croatian_number(n, feminine=False):
+    if n < 0:
+        return 'minus ' + croatian_number(-n, feminine)
+    if n < 1000:
+        return _below_thousand(n, feminine)
+    if n >= 1_000_000_000:
+        # Such figures do not occur in our Bela facts; keep a safe word form for billions.
+        b, r = divmod(n, 1_000_000_000)
+        unit = 'milijarda' if b == 1 else ('milijarde' if _last_for_plural(b) in (2, 3, 4) else 'milijardi')
+        return ('jedna' if b == 1 else croatian_number(b, feminine=True)) + ' ' + unit + ((' ' + croatian_number(r, feminine)) if r else '')
+    pieces=[]
+    millions, remainder = divmod(n, 1_000_000)
+    thousands, under = divmod(remainder, 1000)
+    if millions:
+        unit='milijun' if millions == 1 else 'milijuna'
+        pieces.append((('jedan' if millions == 1 else croatian_number(millions)) + ' ' + unit))
+    if thousands:
+        if thousands == 1:
+            pieces.append('tisuću')
+        else:
+            end=_last_for_plural(thousands)
+            unit='tisuće' if end in (2, 3, 4) else 'tisuća'
+            pieces.append(croatian_number(thousands, feminine=True) + ' ' + unit)
+    if under:
+        pieces.append(_below_thousand(under, feminine))
+    return ' '.join(pieces)
+
+
+def spoken_croatian(text):
+    """Convert number *tokens* to Croatian words before sending to Azure.
+
+    Keeps all original numbers in the on-screen video, caption, and facts.json.
+    Handles 802, 822, 162, 200+150, 10.518.300, 39,5, 32 karte.
+    """
+    text = re.sub(r'(?<=\d)\s*%', ' posto', text)
+    # Thousand separators are dots in Croatian; handle full numbers as one unit.
+    number_regex = re.compile(r'(?<![\w])\d{1,3}(?:\.\d{3})+(?:,\d+)?(?!\w)|(?<![\w])\d+(?:,\d+)?(?!\w)', re.UNICODE)
+    feminine_follow = re.compile(r'\s+(?:karte|karta|kartama|runda|runde|partija|partije|boja|boje|osoba|osobe|igračica|igračice)\b',re.IGNORECASE)
+    def replace(match):
+        raw=match.group(0)
+        next_words=text[match.end():match.end()+36]
+        feminine=bool(feminine_follow.match(next_words))
+        if ',' in raw:
+            whole, decimal=raw.split(',',1)
+            # Read digits after decimal individually (e.g., 39,50).
+            return (croatian_number(int(whole.replace('.', '')),feminine) + ' zarez ' +
+                    ' '.join(croatian_number(int(d)) for d in decimal))
+        return croatian_number(int(raw.replace('.','')), feminine)
+    text=number_regex.sub(replace,text)
+    # Mathematical strings e.g. "dvjesto + sto pedeset" spoken naturally.
+    text=re.sub(r'\s*\+\s*', ' plus ', text)
+    return text
+
 def speak(sentence, dst, voice='music'):
     """Private Azure preview or no-voice production. No eSpeak robotic narration."""
     if voice == 'music':
@@ -194,8 +283,8 @@ def speak(sentence, dst, voice='music'):
         raise RuntimeError('Invalid AZURE_SPEECH_REGION value.')
     ssml = ('<speak version="1.0" xml:lang="hr-HR" '
             'xmlns="http://www.w3.org/2001/10/synthesis">'
-            '<voice name="hr-HR-GabrijelaNeural"><prosody rate="+7%">'
-            + xml_escape(sentence) + '</prosody></voice></speak>')
+            '<voice name="hr-HR-GabrijelaNeural"><prosody rate="+2%">'
+            + xml_escape(spoken_croatian(sentence)) + '</prosody></voice></speak>')
     req=urllib.request.Request(
         f'https://{region}.tts.speech.microsoft.com/cognitiveservices/v1',
         data=ssml.encode('utf-8'),method='POST', headers={
