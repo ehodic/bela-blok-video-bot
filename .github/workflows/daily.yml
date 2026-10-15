@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'preview = samo videi; publish = generiraj i zakazi objave'
+        description: 'preview = 5 bez glasa; voice-test = 1 privatni video Gabrijela; publish = objavi 5 bez glasa'
         type: choice
-        options: [preview, publish]
+        options: [preview, publish, voice-test]
         default: preview
 
 permissions:
@@ -32,12 +32,37 @@ jobs:
         with:
           python-version: '3.12'
       - name: FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - name: Dependencies
         run: pip install -r Bela_Blok_Video_Bot/requirements.txt
-      - name: Generate 5 videos
-        run: python Bela_Blok_Video_Bot/generate.py --count 5
-      - name: Test Buffer connection
+      - name: Generate 5 videos (licensed voice only when confirmed)
+        if: github.event_name == 'schedule' || inputs.mode == 'publish' || inputs.mode == 'preview'
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: westeurope
+          AZURE_SPEECH_PAID_TIER_CONFIRMED: ${{ vars.AZURE_SPEECH_PAID_TIER_CONFIRMED }}
+        run: |
+          if [[ "$AZURE_SPEECH_PAID_TIER_CONFIRMED" == "yes" ]]; then
+            python Bela_Blok_Video_Bot/generate.py --count 5 --voice azure
+          else
+            python Bela_Blok_Video_Bot/generate.py --count 5 --voice music
+          fi
+      - name: Private Azure Gabrijela sample (NOT FOR PUBLICATION)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'voice-test'
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: westeurope
+        run: python Bela_Blok_Video_Bot/generate.py --date 2026-10-16 --count 1 --voice azure --preview
+      - name: Downloadable personal voice test
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'voice-test'
+        uses: actions/upload-artifact@v4
+        with:
+          name: gabrijela-private-review
+          path: Bela_Blok_Video_Bot/preview.mp4
+          retention-days: 1
+          if-no-files-found: error
+      - name: Verify Buffer connection (no posts)
+        if: github.event_name == 'schedule' || inputs.mode == 'publish' || inputs.mode == 'preview'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python Bela_Blok_Video_Bot/publish_buffer.py --test-connection
@@ -57,7 +82,7 @@ jobs:
             echo 'Objavljivanje nije aktivno: nedostaje jedan od Buffer / Cloudflare podataka.'
           fi
       - name: Upload preview videos (manual preview mode)
-        if: (github.event_name == 'workflow_dispatch' && inputs.mode == 'preview') || steps.activation.outputs.ready != 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.mode == 'preview') || ((github.event_name == 'schedule' || inputs.mode == 'publish') && steps.activation.outputs.ready != 'true')
         uses: actions/upload-artifact@v4
         with:
           name: bela-blok-5-videa
