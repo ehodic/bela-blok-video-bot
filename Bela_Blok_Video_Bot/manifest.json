@@ -1,30 +1,65 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "videos": [
     {
-      "name": "bela_20261015_01.mp4",
-      "path": "videos/2026-10-15/bela_20261015_01.mp4",
-      "caption": "Sjećaš se najbolje runde? Najbolja runda i ukupni bodovi na jednom mjestu. Bela Blok za iPhone: https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024 #Bela #Belot #BelaBlok #Kartanje #DrustveneIgre"
+      "name": "bela_20261016_01.mp4",
+      "path": "videos/2026-10-16/bela_20261016_01.mp4",
+      "caption": "🃏 Može li 802 bodova stati u jedno dijeljenje? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_016",
+      "source_url": "https://belaklub.com/pravila.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules_variant"
     },
     {
-      "name": "bela_20261015_02.mp4",
-      "path": "videos/2026-10-15/bela_20261015_02.mp4",
-      "caption": "Revanš jednim dodirom! Nema ponovnog upisivanja igrača. Bela Blok za iPhone: https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024 #Bela #Belot #BelaBlok #Kartanje #DrustveneIgre"
+      "name": "bela_20261016_02.mp4",
+      "path": "videos/2026-10-16/bela_20261016_02.mp4",
+      "caption": "🃏 Zašto ne treba automatski čuvati svakog asa za kraj? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaSavjeti #BelaEkipa",
+      "topic_id": "new202610_091",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
     },
     {
-      "name": "bela_20261015_03.mp4",
-      "path": "videos/2026-10-15/bela_20261015_03.mp4",
-      "caption": "Kako najbrže upisati rundu? Unos bodova jednostavan je i brz. Bela Blok za iPhone: https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024 #Bela #Belot #BelaBlok #Kartanje #DrustveneIgre"
+      "name": "bela_20261016_03.mp4",
+      "path": "videos/2026-10-16/bela_20261016_03.mp4",
+      "caption": "🃏 Kvint do desetke ili kvart do asa: koji je jači? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
+      "topic_id": "new202610_028",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
     },
     {
-      "name": "bela_20261015_04.mp4",
-      "path": "videos/2026-10-15/bela_20261015_04.mp4",
-      "caption": "Bela na mobitelu, bez komplikacija. Rezultati, povijest i upute na jednom mjestu. Bela Blok za iPhone: https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024 #Bela #Belot #BelaBlok #Kartanje #DrustveneIgre"
+      "name": "bela_20261016_04.mp4",
+      "path": "videos/2026-10-16/bela_20261016_04.mp4",
+      "caption": "🃏 Ako nemaš otvorenu boju, uvijek možeš baciti bilo što? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
+      "topic_id": "new202610_066",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
     },
     {
-      "name": "bela_20261015_05.mp4",
-      "path": "videos/2026-10-15/bela_20261015_05.mp4",
-      "caption": "Tko je na redu za miješanje? Bela Blok prati sljedećeg mješača. Bela Blok za iPhone: https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024 #Bela #Belot #BelaBlok #Kartanje #DrustveneIgre"
+      "name": "bela_20261016_05.mp4",
+      "path": "videos/2026-10-16/bela_20261016_05.mp4",
+      "caption": "🃏 Znaš li tko je imao najbolju rundu jučer? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #AppStore",
+      "topic_id": "new202610_125",
+      "source_url": "https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "app"
     }
   ]
 }
