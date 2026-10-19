@@ -1,23 +1,23 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "videos": [
     {
-      "name": "bela_20261018_01.mp4",
-      "path": "videos/2026-10-18/bela_20261018_01.mp4",
-      "caption": "🃏 Četiri devetke nose 150 u zvanju. Koliko nose kao karte? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
-      "topic_id": "new202610_002",
+      "name": "bela_20261019_01.mp4",
+      "path": "videos/2026-10-19/bela_20261019_01.mp4",
+      "caption": "🃏 Kolika je šansa dobiti svih osam karata jedne boje? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_136",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
+      "math_formula": "4 / C(32,8)",
+      "claim_kind": "matematika"
     },
     {
-      "name": "bela_20261018_02.mp4",
-      "path": "videos/2026-10-18/bela_20261018_02.mp4",
-      "caption": "🃏 Vrijedi li ti belot od svih osam iste boje kao automatska pobjeda? Kako se igra kod vas? Napiši u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaEkipa #Kartasi",
-      "topic_id": "new202610_110",
+      "name": "bela_20261019_02.mp4",
+      "path": "videos/2026-10-19/bela_20261019_02.mp4",
+      "caption": "🃏 Smije li se kod vas zvati bela ako nisi odnio nijedan štih? Kako se igra kod vas? Napiši u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaEkipa #Kartasi",
+      "topic_id": "new202610_107",
       "source_url": "https://belaklub.com/pravila.html",
       "source_status": "online",
       "editorial_class": "standard",
@@ -26,10 +26,10 @@
       "claim_kind": "rules_variant"
     },
     {
-      "name": "bela_20261018_03.mp4",
-      "path": "videos/2026-10-18/bela_20261018_03.mp4",
-      "caption": "🃏 Bela se prijavljuje uz prvu kartu runde? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
-      "topic_id": "new202610_060",
+      "name": "bela_20261019_03.mp4",
+      "path": "videos/2026-10-19/bela_20261019_03.mp4",
+      "caption": "🃏 Četiri kralja: 100 u zvanju. Koliko u štihovima? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_006",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
@@ -38,28 +38,28 @@
       "claim_kind": "rules"
     },
     {
-      "name": "bela_20261018_04.mp4",
-      "path": "videos/2026-10-18/bela_20261018_04.mp4",
-      "caption": "🃏 Sva četiri dečka i sve četiri devetke: koliko ukupno zvanja? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Bodovi",
-      "topic_id": "new202610_084",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
-    },
-    {
-      "name": "bela_20261018_05.mp4",
-      "path": "videos/2026-10-18/bela_20261018_05.mp4",
-      "caption": "🃏 Želiš promijeniti izgled tijekom kartanja? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #AppStore",
-      "topic_id": "new202610_133",
+      "name": "bela_20261019_04.mp4",
+      "path": "videos/2026-10-19/bela_20261019_04.mp4",
+      "caption": "🃏 Prekinuli ste kartanje na pola partije? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #AppStore",
+      "topic_id": "new202610_128",
       "source_url": "https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
       "math_formula": null,
       "claim_kind": "app"
+    },
+    {
+      "name": "bela_20261019_05.mp4",
+      "path": "videos/2026-10-19/bela_20261019_05.mp4",
+      "caption": "🃏 Niz od šest: 120 ili 100 bodova? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
+      "topic_id": "new202610_037",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
     }
   ]
 }
