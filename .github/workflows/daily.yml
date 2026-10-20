@@ -65,6 +65,8 @@ jobs:
         if: github.event_name == 'schedule' || inputs.mode == 'publish' || inputs.mode == 'preview'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ vars.BUFFER_INSTAGRAM_CHANNEL_ID }}
+          BUFFER_TIKTOK_CHANNEL_ID: ${{ vars.BUFFER_TIKTOK_CHANNEL_ID }}
         run: python Bela_Blok_Video_Bot/publish_buffer.py --test-connection
       - name: Check publish configuration
         id: activation
