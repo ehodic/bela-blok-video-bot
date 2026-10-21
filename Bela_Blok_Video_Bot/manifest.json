@@ -1,65 +1,65 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "videos": [
     {
-      "name": "bela_20261020_01.mp4",
-      "path": "videos/2026-10-20/bela_20261020_01.mp4",
-      "caption": "🃏 I dečki i devetke, svih osam u jednoj ruci? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
-      "topic_id": "new202610_143",
+      "name": "bela_20261021_01.mp4",
+      "path": "videos/2026-10-21/bela_20261021_01.mp4",
+      "caption": "🃏 Četiri dečka zvuče brutalno. Koliko stvarno vrijede same karte? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_001",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
-      "math_formula": "1/C(32,8)",
-      "claim_kind": "matematika"
+      "math_formula": null,
+      "claim_kind": "rules"
     },
     {
-      "name": "bela_20261020_02.mp4",
-      "path": "videos/2026-10-20/bela_20261020_02.mp4",
-      "caption": "🃏 Igra je 162 plus bela 20. Koliko je ukupno bodova u dijeljenju? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Bodovi",
-      "topic_id": "new202610_076",
+      "name": "bela_20261021_02.mp4",
+      "path": "videos/2026-10-21/bela_20261021_02.mp4",
+      "caption": "🃏 Imaš traženu boju, ali i adut. Smiješ li odmah presjeći? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #PravilaBele #IgreKarata",
+      "topic_id": "new202610_049",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261021_03.mp4",
+      "path": "videos/2026-10-21/bela_20261021_03.mp4",
+      "caption": "🃏 Je li opasno baciti aduta na štih koji partner već dobiva? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaSavjeti #BelaEkipa",
+      "topic_id": "new202610_103",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261021_04.mp4",
+      "path": "videos/2026-10-21/bela_20261021_04.mp4",
+      "caption": "🃏 Svaki štih donosi jednak broj bodova? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
+      "topic_id": "new202610_062",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261021_05.mp4",
+      "path": "videos/2026-10-21/bela_20261021_05.mp4",
+      "caption": "🃏 Par A ima 130, a igra vrijedi 262. Koliko ima drugi? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Bodovi",
+      "topic_id": "new202610_082",
       "source_url": "https://belaklub.com/pravila.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
       "math_formula": null,
       "claim_kind": "rules_variant"
-    },
-    {
-      "name": "bela_20261020_03.mp4",
-      "path": "videos/2026-10-20/bela_20261020_03.mp4",
-      "caption": "🃏 Zašto je devetka aduta opasnija nego što izgleda? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaSavjeti #BelaEkipa",
-      "topic_id": "new202610_092",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
-    },
-    {
-      "name": "bela_20261020_04.mp4",
-      "path": "videos/2026-10-20/bela_20261020_04.mp4",
-      "caption": "🃏 Kad netko presiječe adutom, vrijedi li tuđi as više? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #PravilaBele #IgreKarata",
-      "topic_id": "new202610_051",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
-    },
-    {
-      "name": "bela_20261020_05.mp4",
-      "path": "videos/2026-10-20/bela_20261020_05.mp4",
-      "caption": "🃏 Mogu li ista karta i bela sudjelovati u dvije prijave? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
-      "topic_id": "new202610_036",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
     }
   ]
 }
