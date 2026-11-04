@@ -1,23 +1,11 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "videos": [
     {
-      "name": "bela_20261103_01.mp4",
-      "path": "videos/2026-11-03/bela_20261103_01.mp4",
-      "caption": "🃏 Ako je boja unaprijed određena, koliko često dobiješ točno četiri te boje? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
-      "topic_id": "new202610_148",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": "C(8,4)*C(24,4)/C(32,8)",
-      "claim_kind": "matematika"
-    },
-    {
-      "name": "bela_20261103_02.mp4",
-      "path": "videos/2026-11-03/bela_20261103_02.mp4",
-      "caption": "🃏 Je li uvijek pametno zvati adut samo zbog jednog dečka? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaSavjeti #BelaEkipa",
-      "topic_id": "new202610_097",
+      "name": "bela_20261104_01.mp4",
+      "path": "videos/2026-11-04/bela_20261104_01.mp4",
+      "caption": "🃏 Četiri desetke: isto zvanje kao četiri asa? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_009",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
@@ -26,40 +14,52 @@
       "claim_kind": "rules"
     },
     {
-      "name": "bela_20261103_03.mp4",
-      "path": "videos/2026-11-03/bela_20261103_03.mp4",
-      "caption": "🃏 Sve igre bele igraju se do 1001 boda? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
-      "topic_id": "new202610_067",
-      "source_url": "https://belaklub.com/pravila.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules_variant"
-    },
-    {
-      "name": "bela_20261103_04.mp4",
-      "path": "videos/2026-11-03/bela_20261103_04.mp4",
-      "caption": "🃏 Ako ukupna igra vrijedi 212, koliko treba za strogu većinu? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Bodovi",
-      "topic_id": "new202610_079",
-      "source_url": "https://belaklub.com/pravila.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules_variant"
-    },
-    {
-      "name": "bela_20261103_05.mp4",
-      "path": "videos/2026-11-03/bela_20261103_05.mp4",
-      "caption": "🃏 Može li obična devetka pobijediti običnu osmicu? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #PravilaBele #IgreKarata",
-      "topic_id": "new202610_046",
+      "name": "bela_20261104_02.mp4",
+      "path": "videos/2026-11-04/bela_20261104_02.mp4",
+      "caption": "🃏 Niz kralj-dama-desetka: vrijedi li 20? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
+      "topic_id": "new202610_040",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
       "math_formula": null,
       "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261104_03.mp4",
+      "path": "videos/2026-11-04/bela_20261104_03.mp4",
+      "caption": "🃏 Četiri devetke jače su od četiri dečka jer ih je teže dobiti? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
+      "topic_id": "new202610_058",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261104_04.mp4",
+      "path": "videos/2026-11-04/bela_20261104_04.mp4",
+      "caption": "🃏 Kod vas miješa onaj lijevo ili desno? Kako se igra kod vas? Napiši u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaEkipa #Kartasi",
+      "topic_id": "new202610_112",
+      "source_url": "https://belaklub.com/pravila.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules_variant"
+    },
+    {
+      "name": "bela_20261104_05.mp4",
+      "path": "videos/2026-11-04/bela_20261104_05.mp4",
+      "caption": "🃏 Našao si stari papir od bele. Možeš li vratiti rezultat? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #AppStore",
+      "topic_id": "new202610_124",
+      "source_url": "https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "app"
     }
   ]
 }
