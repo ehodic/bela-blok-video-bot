@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "videos": [
     {
-      "name": "bela_20261107_01.mp4",
-      "path": "videos/2026-11-07/bela_20261107_01.mp4",
-      "caption": "🃏 A cijela boja koja NIJE adut? Koliko vrijedi? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
-      "topic_id": "new202610_012",
+      "name": "bela_20261108_01.mp4",
+      "path": "videos/2026-11-08/bela_20261108_01.mp4",
+      "caption": "🃏 Koliko bodova ima štih s dečkom aduta i devetkom aduta? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #Zanimljivosti #Karte",
+      "topic_id": "new202610_020",
       "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
@@ -14,22 +14,34 @@
       "claim_kind": "rules"
     },
     {
-      "name": "bela_20261107_02.mp4",
-      "path": "videos/2026-11-07/bela_20261107_02.mp4",
-      "caption": "🃏 Papir je mokar od kave? Što sad? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #AppStore",
-      "topic_id": "new202610_129",
-      "source_url": "https://apps.apple.com/hr/app/bela-blok-belot-scorekeeper/id6809587024",
+      "name": "bela_20261108_02.mp4",
+      "path": "videos/2026-11-08/bela_20261108_02.mp4",
+      "caption": "🃏 Dva terca, jedan do asa i drugi do dame: koji pobjeđuje? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
+      "topic_id": "new202610_026",
+      "source_url": "https://www.pagat.com/jass/belote.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
       "math_formula": null,
-      "claim_kind": "app"
+      "claim_kind": "rules"
     },
     {
-      "name": "bela_20261107_03.mp4",
-      "path": "videos/2026-11-07/bela_20261107_03.mp4",
-      "caption": "🃏 Zašto zvanja mogu pokvariti prividnu prednost iz štihova? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaSavjeti #BelaEkipa",
-      "topic_id": "new202610_102",
+      "name": "bela_20261108_03.mp4",
+      "path": "videos/2026-11-08/bela_20261108_03.mp4",
+      "caption": "🃏 Je li devetka aduta stvarno jača od asa aduta? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #PravilaBele #IgreKarata",
+      "topic_id": "new202610_044",
+      "source_url": "https://www.pagat.com/jass/belote.html",
+      "source_status": "online",
+      "editorial_class": "standard",
+      "editorial_reviewed": true,
+      "math_formula": null,
+      "claim_kind": "rules"
+    },
+    {
+      "name": "bela_20261108_04.mp4",
+      "path": "videos/2026-11-08/bela_20261108_04.mp4",
+      "caption": "🃏 Koliko je 162 + 90 ako jedan par odnese baš sve štihove? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Bodovi",
+      "topic_id": "new202610_090",
       "source_url": "https://belaklub.com/pravila.html",
       "source_status": "online",
       "editorial_class": "standard",
@@ -38,28 +50,16 @@
       "claim_kind": "rules_variant"
     },
     {
-      "name": "bela_20261107_04.mp4",
-      "path": "videos/2026-11-07/bela_20261107_04.mp4",
-      "caption": "🃏 U ruci imaš četiri devetke i četiri dečka: koje zvanje prijaviš? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaKviz #Zvanja",
-      "topic_id": "new202610_033",
-      "source_url": "https://www.pagat.com/jass/belote.html",
+      "name": "bela_20261108_05.mp4",
+      "path": "videos/2026-11-08/bela_20261108_05.mp4",
+      "caption": "🃏 Je li 822 moguće ili je 802 pravi rekord? Kako se igra kod vas? Napiši u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #BelaEkipa #Kartasi",
+      "topic_id": "new202610_106",
+      "source_url": "https://belaklub.com/pravila.html",
       "source_status": "online",
       "editorial_class": "standard",
       "editorial_reviewed": true,
       "math_formula": null,
-      "claim_kind": "rules"
-    },
-    {
-      "name": "bela_20261107_05.mp4",
-      "path": "videos/2026-11-07/bela_20261107_05.mp4",
-      "caption": "🃏 Zvanje 200 znači da si osvojio 200 bodova iz karata? Pogodi prije odgovora i napiši rezultat u komentar! 📲 Bela Blok: digitalni zapis rezultata, statistika i revanš. Preuzmi besplatno za iPhone u App Storeu. #Bela #Belot #BelaBlok #Kartanje #MitIliIstina #BelaKviz",
-      "topic_id": "new202610_057",
-      "source_url": "https://www.pagat.com/jass/belote.html",
-      "source_status": "online",
-      "editorial_class": "standard",
-      "editorial_reviewed": true,
-      "math_formula": null,
-      "claim_kind": "rules"
+      "claim_kind": "rules_variant"
     }
   ]
 }
